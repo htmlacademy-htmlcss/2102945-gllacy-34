@@ -1,21 +1,58 @@
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/raleway/inter-400.woff2") format("woff2");
+  font-display: swap;
+}
 
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/rubik/inter-700.woff2") format("woff2");
+  font-display: swap;
+}
 
-
-
-
-
-
-
-
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/rubik/inter-900.woff2") format("woff2");
+  font-display: swap;
+}
 
 html {
   height: 100%;
 }
 
-body{
+body {
   background-color: #FEAFC3;
 }
-/* .visually-hidden {
+
+/* buttons */
+.button-banner {
+  display: block;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #2D3440;
+  background: #FCFCFC;
+  width: 176px;
+  outline: 4px solid rgba(252, 252, 252, 0.4);
+  box-shadow: 0px 4px 12px rgba(45, 52, 64, 0.1);
+  border-radius: 26px;
+  cursor: pointer;
+  margin: 0;
+  Padding-top:12px;
+  padding-bottom:12px;
+  border-style: none;
+}
+
+.visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -24,14 +61,18 @@ body{
   border: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
-} */
+}
 
+/* navigation */
 .navigation {
   display: flex;
+  position: relative;
   flex-direction: row;
   justify-content: space-around;
   margin: 0 auto;
   width: 1170px;
+  margin-top: 30px;
+
 }
 
 .navigation-left {
@@ -48,6 +89,140 @@ body{
   list-style: none;
   gap: 16px;
 }
+
+.navigation-link-left {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #2D3440;
+}
+
+.navigation-link-right {
+  font-family: 'Inter' sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #2D3440;
+}
+
 a {
   text-decoration: none;
+}
+
+.logo {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.contact-phone {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #2D3440;
+}
+
+.navigation-link-right {
+  border: 10px solid rgba(252, 252, 252, 0.3);
+  border-radius: 27px;
+}
+
+.search-icon {
+  position: relative;
+  top: 2px;
+  background-color: rgba(252, 252, 252, 0.3);
+}
+
+.enter-icon {
+  position: relative;
+  top: 2px;
+  background-color: rgba(252, 252, 252, 0.3);
+}
+
+.backet-icon {
+  position: relative;
+  top: 2px;
+  background-color: rgba(252, 252, 252, 0.3);
+}
+
+/* main */
+
+
+.banner {
+  margin: 0 auto;
+  width: 1170px;
+}
+
+.banner-title-main {
+  font-family: 'Inter',sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+  text-align: center;
+  color: #2D3440;
+}
+
+.banner-wrap {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 30px;
+}
+
+.banner-left {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 536px;
+  height: 268px;
+  background: #FF7799;
+  border-radius: 16px;
+  padding-left: 36px;
+}
+
+.left-pic {
+  position: relative;
+  left: 290px;
+  bottom: 220px;
+}
+
+.banner-right {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 536px;
+  height: 268px;
+  background: #FF7799;
+  border-radius: 16px;
+  padding-left: 36px;
+}
+
+.right-pic {
+  position: relative;
+  left: 290px;
+  bottom: 220px;
+}
+
+.banner-title {
+  font-family: 'Inter',sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #2D3440;
+}
+
+.banner-text {
+  font-family: 'Inter',sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #2D3440;
 }
