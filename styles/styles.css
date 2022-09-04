@@ -47,8 +47,29 @@ body {
   border-radius: 26px;
   cursor: pointer;
   margin: 0;
-  Padding-top:12px;
-  padding-bottom:12px;
+  Padding-top: 12px;
+  padding-bottom: 12px;
+  border-style: none;
+}
+
+.slider-button {
+  display: block;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #2D3440;
+  background: #FCFCFC;
+  width: 139px;
+  outline: 4px solid rgba(252, 252, 252, 0.4);
+  box-shadow: 0px 4px 12px rgba(45, 52, 64, 0.1);
+  border-radius: 26px;
+  cursor: pointer;
+  margin: 0;
+  Padding-top: 12px;
+  padding-bottom: 12px;
   border-style: none;
 }
 
@@ -151,6 +172,108 @@ a {
 }
 
 /* main */
+.page-container {
+  margin: 0 auto;
+  width: 1170px;
+}
+
+.slider {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  position: relative;
+}
+
+.left-slider {
+  display: flex;
+  flex-direction: column;
+  margin-top: 150px;
+}
+
+.slider-title {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 46px;
+  color: #2D3440;
+  margin: 0;
+}
+
+.slider-text {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #2D3440;
+  width: 414px;
+}
+
+.middle-slider {
+  padding-left: 20px;
+  margin-top: 30px;
+}
+
+.slide-main {
+  background: rgba(252, 252, 252, 0.3);
+  width: 38px;
+  height: 38px;
+  border: 2px solid #FCFCFC;
+  border-radius: 26px;
+  cursor: pointer;
+}
+
+.slide-left {
+  position: absolute;
+  right: 666px;
+  bottom: 230px;
+}
+
+.slide-right {
+  position: absolute;
+  right: 356px;
+  bottom: 230px;
+}
+
+.ice-cream-red {
+  z-index: 1;
+}
+
+.ice-cream-red-circle {
+  position: absolute;
+  z-index: -1;
+  right: 370px;
+  bottom: 99px;
+}
+
+.right-slider {
+  display: flex;
+  margin-top: 220px;
+  gap: 40px;
+  padding-left: 110px;
+}
+
+.ice-cream-orange:before {
+
+  border: 10px solid rgba(252, 252, 252, 0.3);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .banner {
@@ -159,7 +282,7 @@ a {
 }
 
 .banner-title-main {
-  font-family: 'Inter',sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 900;
   font-size: 32px;
@@ -210,7 +333,7 @@ a {
 }
 
 .banner-title {
-  font-family: 'Inter',sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -219,7 +342,7 @@ a {
 }
 
 .banner-text {
-  font-family: 'Inter',sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
