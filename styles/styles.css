@@ -2,7 +2,7 @@
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/raleway/inter-400.woff2") format("woff2");
+  src: url("../fonts/inter-400.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -10,7 +10,7 @@
   font-family: "Inter";
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/rubik/inter-700.woff2") format("woff2");
+  src: url("../fonts/inter-700.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -18,7 +18,7 @@
   font-family: "Inter";
   font-style: normal;
   font-weight: 900;
-  src: url("../fonts/rubik/inter-900.woff2") format("woff2");
+  src: url("../fonts/inter-900.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -26,8 +26,16 @@ html {
   height: 100%;
 }
 
-body {
+.pink {
   background-color: #FEAFC3;
+}
+
+.blue {
+  background-color: #69A9FF;
+}
+
+.yellow {
+  background-color: #FCC850;
 }
 
 /* buttons */
@@ -43,7 +51,7 @@ body {
   background: #FCFCFC;
   width: 176px;
   outline: 4px solid rgba(252, 252, 252, 0.4);
-  box-shadow: 0px 4px 12px rgba(45, 52, 64, 0.1);
+  box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
   border-radius: 26px;
   cursor: pointer;
   margin: 0;
@@ -64,7 +72,7 @@ body {
   background: #FCFCFC;
   width: 139px;
   outline: 4px solid rgba(252, 252, 252, 0.4);
-  box-shadow: 0px 4px 12px rgba(45, 52, 64, 0.1);
+  box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
   border-radius: 26px;
   cursor: pointer;
   margin: 0;
@@ -127,7 +135,11 @@ body {
   font-size: 14px;
   line-height: 20px;
   color: #2D3440;
+  background: rgba(252, 252, 252, 0.3);
+  border-radius: 30px;
+  padding:6px 16px;
 }
+
 
 a {
   text-decoration: none;
@@ -148,27 +160,22 @@ a {
   color: #2D3440;
 }
 
-.navigation-link-right {
-  border: 10px solid rgba(252, 252, 252, 0.3);
-  border-radius: 27px;
-}
+
+
 
 .search-icon {
   position: relative;
   top: 2px;
-  background-color: rgba(252, 252, 252, 0.3);
 }
 
 .enter-icon {
   position: relative;
   top: 2px;
-  background-color: rgba(252, 252, 252, 0.3);
 }
 
 .backet-icon {
   position: relative;
   top: 2px;
-  background-color: rgba(252, 252, 252, 0.3);
 }
 
 /* main */
@@ -348,8 +355,8 @@ a {
 .banner {
   margin: 0 auto;
   width: 1170px;
-  margin-top:80px;
-  padding-bottom:81px;
+  margin-top: 80px;
+  padding-bottom: 81px;
 }
 
 .banner-title-main {
@@ -360,8 +367,8 @@ a {
   line-height: 46px;
   text-align: center;
   color: #2D3440;
-  margin:0;
-  padding-bottom:55px;
+  margin: 0;
+  padding-bottom: 55px;
 }
 
 .banner-wrap {
@@ -421,4 +428,120 @@ a {
   font-size: 16px;
   line-height: 22px;
   color: #2D3440;
+}
+
+.products {
+  margin: 0 auto;
+  width: 1170px;
+}
+
+.product-cart {
+  position: relative;
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  gap: 25px;
+  padding-bottom: 80px;
+}
+
+.product-cart-info {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 270px;
+  background-image: linear-gradient(to top, #FCFCFC 282px, #FEAFC3 50px);
+}
+
+.product-photo {
+  display: block;
+  padding-left: 51px;
+  border-radius: 50%;
+}
+
+.cart-title {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #2D3440;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 8px;
+}
+
+.cart-text {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: #565C66;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 20px;
+}
+
+.product-bottom-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.product-price {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #2D3440;
+}
+
+.product-button {
+  display: block;
+  border: none;
+  background: #FF2F64;
+  border-radius: 26px;
+  width: 32px;
+  height: 32px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.product-cart {
+  padding-left: 2px;
+  padding-top: 7px;
+}
+
+.about {
+  margin: 0 auto;
+  width: 1170px;
+}
+
+.about-wrapper {
+  background-color: #FCFCFC;
+}
+
+.about-info {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+}
+
+.about-top {
+  display: flex;
+  flex-direction: row;
+  gap: 80px;
+  padding-bottom: 40px;
+}
+
+.about-bottom {
+  display: flex;
+  flex-direction: row;
+  gap: 80px;
 }
