@@ -334,24 +334,58 @@
           <div class="news-wrap">
             <div class="left-news">
               <p class="left-text-news">Новое в нашем блоге</p>
-              <h3 class="left-title">10 способов сервировки фруктовых щербетов
+              <h3 class="left-title-news">10 способов сервировки фруктовых щербетов
                 к столу</h3>
             </div>
             <div class="right-news">
-              <p class="right-text-news">Подпишитесь на нашу сладкую рассылку и будьте всегда
-                в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной
-                ерунды. Честно =)</p>
-              <form action="#" method="get">
-                <div class="input-field input-field-newsletter">
-                  <input id="email" type="email" name="email">
-                  <label for="email">Электронная почта</label>
-                  <input class="btn" type="submit" value="Отправить">
-              </form>
+              <div class="right-news-wrapper">
+                <p class="right-text-news">Подпишитесь на нашу сладкую рассылку и будьте всегда
+                  в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной
+                  ерунды. Честно =)</p>
+                <form action="http://echo.htmlacademy.ru" method="get">
+                  <div class="input-field-subscribe">
+                    <input class="input-subscribe" id="email" type="email" name="email" placeholder="email@example.com">
+                    <label class="visually-hidden" for="email"> Ваш email</label>
+                    <input class="subscribe-button" type="submit" value="Отправить">
+                  </div>
+                </form>
+              </div>
             </div>
           </div>
       </div>
       </section>
-      </div>
+      <section class="delivery">
+        <div class="left-delivery">
+          <h2 class="delivery-title">Доставка любимого мороженого на дом</h2>
+          <p class="delivery-text">Хочется полакомиться любимым десертом, но нет времени съездить в магазин? Закажите
+            доставку мороженого на дом, и курьер привезёт вам ваш заказ в течение часа!</p>
+        </div>
+        <div class="right-delivery">
+          <p class="right-delivery-text">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.
+          </p>
+          <form class="delivery-form" action="https://echo.htmlacademy.ru" method="post">
+            <div class="input-top-wrapper">
+              <div class="wrapper-column">
+                <label class="contact-us" for="contact-us-date">Дата</label>
+                <input type="text" class="date-input" id="contact-us-date" placeholder="01.04.2020">
+              </div>
+              <div class="wrapper-column">
+                <label class="contact-us" for="contact-us-tel">Телефон</label>
+                <input type="tel" class="tel-input" id="contact-us-tel" placeholder="+7 800 999-00-00"
+                  pattern="[0-9]{4}">
+              </div>
+            </div>
+            <div class="wrapper-column">
+              <label class="contact-us" for="contact-us-address">Дата</label>
+              <input type="text" class="address-input" id="contact-us-address"
+                placeholder="ул. Большая Конюшенная, 19/8">
+            </div>
+            <input class="subscribe-button" type="submit" value="Отправить">
+          </form>
+        </div>
+
+
+      </section>
     </main>
   </body>
 
