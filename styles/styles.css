@@ -545,12 +545,10 @@ a {
 }
 
 
-
 .about-info {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-
 }
 
 .about-top {
@@ -575,4 +573,22 @@ a {
 .about-text{
   width: 380px;
   margin:0;
+}
+
+.news{
+  margin: 0 auto;
+  width: 1170px;
+}
+
+.news-wrap{
+  display: flex;
+  flex-direction: row;
+ flex-wrap: nowrap;
+}
+
+.left-news{
+  display: flex;
+  flex-direction: column;
+  width: 570px;
+  height: 224px;
 }
