@@ -102,7 +102,8 @@ html {
 
   border-style: none;
 }
-.contact-button{
+
+.contact-button {
   display: block;
   font-family: 'Inter', sans-serif;
   font-style: normal;
@@ -120,10 +121,32 @@ html {
   margin: 0;
   Padding-top: 12px;
   padding-bottom: 12px;
-  margin-top:32px;
-  margin-left:130px;
+  margin-top: 32px;
+  margin-left: 130px;
   border-style: none;
 }
+
+.call-us-button {
+  display: block;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #FCFCFC;
+  width: 260px;
+  background: #FF2F64;
+  outline: 4px solid rgba(255, 47, 100, 0.3);
+  box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
+  border-radius: 26px;
+  cursor: pointer;
+  margin: 0;
+  padding: 12px 32px;
+  margin-top: 32px;
+  border-style: none;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -703,6 +726,7 @@ a {
 
 /* delivery */
 .delivery {
+  position: relative;
   display: flex;
   flex-direction: row;
   margin: 0 auto;
@@ -730,7 +754,7 @@ a {
   line-height: 46px;
   color: #2D3440;
   margin: 0;
-  padding-bottom:24px ;
+  padding-bottom: 24px;
 }
 
 .delivery-text {
@@ -799,7 +823,7 @@ a {
   width: 117px;
   height: 42px;
   padding-left: 14px;
-  padding-top:5px;
+  padding-top: 5px;
 }
 
 .date-input::placeholder {
@@ -820,7 +844,7 @@ a {
   padding-left: 14px;
 }
 
-.tel-input::placeholder{
+.tel-input::placeholder {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -829,16 +853,16 @@ a {
   color: #B9B9B9;
 }
 
-.contact-us{
+.contact-us {
   font-family: 'Inter', sans-serif;
-font-style: normal;
-font-weight: 700;
-font-size: 16px;
-line-height: 20px;
-color: #2D3440;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #2D3440;
 }
 
-.address-input{
+.address-input {
   box-sizing: border-box;
   border: 1px solid #B9B9B9;
   border-radius: 4px;
@@ -847,11 +871,142 @@ color: #2D3440;
   padding-left: 14px;
 }
 
-.address-input::placeholder{
+.address-input::placeholder {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   color: #B9B9B9;
+}
+/* tooltip */
+
+.tooltip-toggle {
+  position: absolute;
+  bottom: 330px;
+  right: 458px;
+  border-style: none;
+  background-color: #FFFFFF;
+  cursor: pointer;
+  border: none;
+}
+
+.tooltip-text {
+  display: none;
+  position: absolute;
+  bottom: 310px;
+  right: 280px;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  width: 169px;
+  height: 52px;
+  color: #565C66;
+  border: 1px solid #B9B9B9;
+  background: #FCFCFC;
+  box-shadow: 0 2px 12px rgba(173, 152, 143, 0.18);
+  border-radius: 1px;
+  padding: 10px 15px;
+}
+
+.tooltip-toggle-contact {
+  position: absolute;
+  bottom: 210px;
+  right: 448px;
+  border-style: none;
+  background-color: #FFFFFF;
+  cursor: pointer;
+  border: none;
+}
+
+.tooltip-text-contact {
+  display: none;
+  position: absolute;
+  bottom: 190px;
+  right: 280px;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  width: 160px;
+  height: 52px;
+  color: #565C66;
+  border: 1px solid #B9B9B9;
+  background: #FCFCFC;
+  box-shadow: 0 2px 12px rgba(173, 152, 143, 0.18);
+  border-radius: 1px;
+padding-top:10px;
+  padding-left:8px;
+}
+
+/* call us */
+
+.call-us {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  width: 1170px;
+  height: 492px;
+  background-image: url(..//images/callus.png);
+  background-repeat: no-repeat;
+  border-radius: 16px;
+}
+
+.left-call-us {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background: #FCFCFC;
+  box-shadow: 0px 8px 16px rgba(45, 52, 64, 0.12);
+  border-radius: 8px;
+  height: 364px;
+  width: 343px;
+  margin-top: 64px;
+  margin-left: 64px;
+  padding-left: 40px;
+  padding-top: 40px;
+  gap: 12px;
+}
+
+.text-call-us {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #565C66;
+  margin: 0;
+
+}
+
+.title-call-us {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #2D3440;
+  margin: 0;
+
+}
+
+.text-call-time {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #565C66;
+  margin: 0;
+}
+
+.dd-call-time,
+.dl-call-us {
+  margin: 0;
+  padding-top: 10px;
 }

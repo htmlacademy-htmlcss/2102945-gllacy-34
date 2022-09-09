@@ -344,7 +344,8 @@
                   ерунды. Честно =)</p>
                 <form action="http://echo.htmlacademy.ru" method="post">
                   <div class="input-field-subscribe">
-                    <input class="input-subscribe" id="email" type="email" name="email" placeholder="email@example.com" required >
+                    <input class="input-subscribe" id="email" type="email" name="email" placeholder="email@example.com"
+                      required>
                     <label class="visually-hidden" for="email"> Ваш email</label>
                     <input class="subscribe-button" type="submit" value="Отправить">
                   </div>
@@ -366,8 +367,20 @@
           <form class="delivery-form" action="https://echo.htmlacademy.ru" method="post">
             <div class="input-top-wrapper">
               <div class="wrapper-column">
+
                 <label class="contact-us" for="contact-us-date">Дата</label>
                 <input type="text" class="date-input" id="contact-us-date" placeholder="01.04.2020" required>
+
+                <span class="tooltip">
+                  <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M7.00026 2.12508c-2.69252 0-4.87524 2.18272-4.87524 4.87524 0 2.69252 2.18272 4.87528 4.87524 4.87528 2.69252 0 4.87524-2.18276 4.87524-4.87528S9.69278 2.12508 7.00026 2.12508ZM.791687 7.00032c0-3.4289 2.779673-6.208572 6.208573-6.208572 3.42894 0 6.20854 2.779672 6.20854 6.208572 0 3.42888-2.7796 6.20858-6.20854 6.20858-3.4289 0-6.208573-2.7797-6.208573-6.20858ZM7.00007 6.3334c.36819 0 .66667.29848.66667.66667v2.21676c0 .36819-.29848.66667-.66667.66667-.36819 0-.66666-.29848-.66666-.66667V7.00007c0-.36819.29847-.66667.66666-.66667Zm0-2.21675c-.36819 0-.66666.29848-.66666.66667 0 .36818.29847.66666.66666.66666h.00583c.36819 0 .66667-.29848.66667-.66666 0-.36819-.29848-.66667-.66667-.66667h-.00583Z" fill="#2D3440"/>
+                    </svg>
+                  </button>
+                  <span class="tooltip-text" role="tooltip" id="tooltip-label">
+                    Введите точную дату заказа.
+                  </span>
+                </span>
               </div>
               <div class="wrapper-column">
                 <label class="contact-us" for="contact-us-tel">Телефон</label>
@@ -379,6 +392,18 @@
               <label class="contact-us" for="contact-us-address">Адрес</label>
               <input type="text" class="address-input" id="contact-us-address"
                 placeholder="ул. Большая Конюшенная, 19/8" required>
+
+                <span class="tooltip">
+                  <button class="tooltip-toggle-contact" type="button" aria-labelledby="tooltip-label">
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M7.00026 2.12508c-2.69252 0-4.87524 2.18272-4.87524 4.87524 0 2.69252 2.18272 4.87528 4.87524 4.87528 2.69252 0 4.87524-2.18276 4.87524-4.87528S9.69278 2.12508 7.00026 2.12508ZM.791687 7.00032c0-3.4289 2.779673-6.208572 6.208573-6.208572 3.42894 0 6.20854 2.779672 6.20854 6.208572 0 3.42888-2.7796 6.20858-6.20854 6.20858-3.4289 0-6.208573-2.7797-6.208573-6.20858ZM7.00007 6.3334c.36819 0 .66667.29848.66667.66667v2.21676c0 .36819-.29848.66667-.66667.66667-.36819 0-.66666-.29848-.66666-.66667V7.00007c0-.36819.29847-.66667.66666-.66667Zm0-2.21675c-.36819 0-.66666.29848-.66666.66667 0 .36818.29847.66666.66666.66666h.00583c.36819 0 .66667-.29848.66667-.66666 0-.36819-.29848-.66667-.66667-.66667h-.00583Z" fill="#2D3440"/>
+                    </svg>
+                  </button>
+                  <span class="tooltip-text-contact" role="tooltip" id="tooltip-label">
+                    Введите название улицы, дома и квартиры
+                  </span>
+                </span>
+
             </div>
             <input class="contact-button" type="submit" value="Отправить">
           </form>
@@ -386,8 +411,19 @@
 
 
       </section>
-      <section class="our-contact">
-        fdsfds
+      <section class="call-us">
+        <div class="left-call-us">
+          <p class="text-call-us">Адрес главного офиса<br> и офлайн-магазина:</p>
+          <h4 class="title-call-us">наб. реки Карповки,<br> 5 лит П, Санкт-Петербург</h4>
+
+          <p class="text-call-us">Для заказов по телефону:</p>
+          <dl class="dl-call-us">
+          <dt><h4 class="title-call-us">+7 (812) 812-12-12</h4></dt>
+          <dd class="dd-call-time"><p class="text-call-time">(с 10 до 20 ежедневно)</p></dd>
+        </dl>
+          <button class="call-us-button">Форма обратной связи</button>
+
+        </div>
       </section>
     </main>
   </body>
