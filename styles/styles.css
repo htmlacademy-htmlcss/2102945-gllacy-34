@@ -192,6 +192,7 @@ html {
   font-size: 16px;
   line-height: 20px;
   color: #2D3440;
+  text-decoration: none;
 }
 
 .navigation-link-right {
@@ -204,10 +205,6 @@ html {
   background: rgba(252, 252, 252, 0.3);
   border-radius: 30px;
   padding: 6px 16px;
-}
-
-
-a {
   text-decoration: none;
 }
 
@@ -224,10 +221,8 @@ a {
   font-size: 16px;
   line-height: 20px;
   color: #2D3440;
+  text-decoration: none;
 }
-
-
-
 
 .search-icon {
   position: relative;
@@ -250,14 +245,35 @@ a {
   width: 1170px;
 }
 
-.slider {
+/* slider start */
+.slider{
+  margin:0;
+  padding:0;
+}
+.slider-page-active {
+  display: none;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  position: relative;
+  padding-left:20px;
+}
+.slider-page-blue{
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   position: relative;
-  padding-left: 40px;
+  padding-left:20px;
+  background: #69A9FF;
 }
 
+.slider-page-yellow{
+  display: none;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  position: relative;
+  padding-left:20px;
+  background: #FCC850;
+}
 .left-slider {
   display: flex;
   flex-direction: column;
@@ -310,12 +326,6 @@ a {
   opacity: 0.3;
 }
 
-.slider-pagination-button:hover {}
-
-.slider-pagination-button:focus-visible {}
-
-.slider-pagination-button:active {}
-
 .slider-pagination-button-current {
   width: 12px;
   height: 12px;
@@ -327,16 +337,8 @@ a {
   border: none;
 }
 
-.slider-pagination-button-current:hover {}
-
-.slider-pagination-button-current:focus-visible {}
-
-.slider-pagination-button-current:active {}
-
-
-
 .middle-slider {
-  padding-left: 20px;
+  margin-left: 50px;
   margin-top: 30px;
 }
 
@@ -348,7 +350,7 @@ a {
   height: 312px;
   width: 312px;
   top: 143px;
-  right: 384px;
+  right: 359px;
   z-index: -1;
 }
 
@@ -363,13 +365,13 @@ a {
 
 .slide-left {
   position: absolute;
-  right: 678px;
+  right: 648px;
   bottom: 290px;
 }
 
 .slide-right {
   position: absolute;
-  right: 370px;
+  right: 340px;
   bottom: 290px;
 }
 
@@ -378,10 +380,14 @@ a {
   flex-direction: row;
   flex-wrap: wrap;
   margin-top: 220px;
-  gap: 70px;
-  padding-left: 80px;
+  gap: 50px;
+  margin-left: 100px;
 }
-
+.left-icecream,.right-icecream{
+  border:none;
+  z-index: 1;
+  cursor: pointer;
+}
 .left-icecream::before {
   content: "";
   position: absolute;
@@ -391,7 +397,7 @@ a {
   height: 100px;
   width: 100px;
   top: 243px;
-  right: 225px;
+  right: 193px;
   z-index: -1;
 }
 
@@ -404,7 +410,7 @@ a {
   height: 100px;
   width: 100px;
   top: 243px;
-  right: 90px;
+  right: 76px;
   z-index: -1;
 }
 
@@ -417,7 +423,8 @@ a {
   padding-top: 150px;
   padding-left: 150px;
 }
-
+/* slider end */
+/* banner */
 .banner {
   margin: 0 auto;
   width: 1170px;
