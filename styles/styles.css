@@ -443,9 +443,7 @@ html {
   box-shadow: 0px 8px 16px rgba(45, 52, 64, 0.12);
   border-radius: 4px;
   padding: 0;
-  padding-top: 16px;
-  padding-left: 16px;
-  padding-bottom: 14px;
+
 }
 
 .sub-menu::before {
@@ -453,14 +451,14 @@ html {
   position: absolute;
   border-bottom: 1px solid #B9B9B9;
   width: 105px;
-  bottom: 170px;
+  bottom: 150px;
+  left: 16px;
   z-index: -1;
 }
 
 .sub-item {
   display: flex;
   flex-direction: column;
-  gap: 20px;
 }
 
 .sub-item-sub {
@@ -471,6 +469,22 @@ html {
   line-height: 20px;
   color: #2D3440;
   text-decoration: none;
+  padding-top: 6px;
+  padding-left: 16px;
+  padding-bottom: 6px;
+}
+
+.sub-item-sub:hover {
+  background: #FFCBD8;
+}
+
+.sub-item-sub:focus {
+  background: #FF4A78;
+
+}
+
+.sub-item-sub:active {
+  background: #FF7799;
 }
 
 .sub-item-top {
@@ -481,19 +495,15 @@ html {
   line-height: 20px;
   text-decoration: none;
   color: #2D3440;
+  padding-bottom: 22px;
+  padding-left: 16px;
+  padding-top: 6px;
 }
 
-.sub-item-sub:hover,
 .sub-item-top:hover {
   opacity: 0.6;
 }
 
-.sub-item-sub:focus-visible,
-.sub-item-top:focus-visible {
-  outline: 2px solid #AF4FFF;
-}
-
-.sub-item-sub:active,
 .sub-item-top:active {
   opacity: 0.3;
 }
@@ -582,13 +592,14 @@ html {
   height: 40px;
   padding-left: 18px;
 }
+
 .input-area-form:hover {
   background: #FFFFFF;
   outline: 1px solid #2D3440;
   border-radius: 4px;
 }
 
-.input-area-form:focus{
+.input-area-form:focus {
   background: #FFFFFF;
   outline: 2px solid #2D3440;
   border-radius: 4px;
@@ -605,6 +616,7 @@ html {
   outline: 2px solid #EA5454;
   border-radius: 4px;
 }
+
 .input-area-form::placeholder {
   font-family: 'Inter', sans-serif;
   font-style: normal;
@@ -613,7 +625,9 @@ html {
   line-height: 20px;
   color: #2D3440;
 }
-
+dd{
+  margin:0;
+}
 .bottom-area-form {
   display: flex;
   flex-direction: row;
@@ -718,7 +732,7 @@ html {
   border-radius: 4px;
 }
 
-.input-search:focus{
+.input-search:focus {
   background: #FFFFFF;
   outline: 2px solid #2D3440;
   border-radius: 4px;
@@ -735,7 +749,7 @@ html {
 
 /* search field end */
 
-/* popover start */
+/* Корзина начало */
 
 .popover {
   position: absolute;
@@ -843,8 +857,9 @@ html {
   line-height: 22px;
   color: #2D3440;
   max-height: 46px;
-  max-width: 143px;
+  min-width: 160px;
   margin-bottom: 40px;
+  text-decoration: none;
 }
 
 .popover-item-link:hover {
@@ -910,7 +925,7 @@ html {
   margin-top: 10px;
 }
 
-/* popover end */
+/* корзина конец */
 
 
 /* popover empty */
