@@ -360,9 +360,19 @@ html {
   margin: 0 auto;
   width: 1170px;
   margin-top: 30px;
+}
+.navigation-logo:hover {
+  opacity: 0.6;
+}
+
+.navigation-logo:focus {
+  outline: 2px solid #AF4FFF;
 
 }
 
+.navigation-logo:active {
+  opacity: 0.3;
+}
 .navigation-left {
   display: flex;
   flex-direction: row;
@@ -649,7 +659,18 @@ dd{
   line-height: 20px;
   color: #2D3440;
 }
+.personal-area-link:hover {
+  opacity: 0.6;
+}
 
+.personal-area-link:focus-visible {
+  outline: 2px solid #AF4FFF;
+
+}
+
+.personal-area-link:active {
+  opacity: 0.3;
+}
 /*  personal area end */
 .logo {
   position: absolute;
@@ -666,7 +687,18 @@ dd{
   color: #2D3440;
   text-decoration: none;
 }
+.contact-phone:hover {
+  opacity: 0.6;
+}
 
+.contact-phone:focus-visible {
+  outline: 2px solid #AF4FFF;
+
+}
+
+.contact-phone:active {
+  opacity: 0.3;
+}
 .search-icon {
   position: relative;
   top: 2px;
@@ -1400,7 +1432,7 @@ dd{
   padding: 0;
   margin: 0;
   gap: 25px;
-  padding-bottom: 80px;
+
 }
 
 .product-cart-info {
@@ -1489,13 +1521,14 @@ dd{
 }
 
 .product-car-logo {
-  padding-top: 5px;
+  padding-top: 2px;
 }
 
 .about {
   margin: 0 auto;
   background-image: url(..//images/waffle.png);
   padding: 24px 24px;
+  margin-top:50px;
 }
 
 .about-wrapper {
@@ -2032,6 +2065,24 @@ input[type=date]::-webkit-calendar-picker-indicator {
 
 .middle-link {
   padding-left: 18px;
+}
+.middle-link:hover,
+.html-logo:hover,
+.middle-link-active:hover {
+  opacity: 0.6;
+}
+
+.middle-link:focus-visible,
+.html-logo:focus-visible,
+.middle-link-active:focus-visible {
+  outline: 2px solid #AF4FFF;
+
+}
+
+.middle-link:active,
+.html-logo:active,
+.middle-link-active:active {
+  opacity: 0.3;
 }
 
 .html-academy-footer {
