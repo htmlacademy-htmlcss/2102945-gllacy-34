@@ -2084,7 +2084,9 @@ input[type=date]::-webkit-calendar-picker-indicator {
 .middle-link-active:active {
   opacity: 0.3;
 }
+.html-logo{
 
+}
 .html-academy-footer {
   opacity: 0.9;
   border-bottom: 1px solid #2D3440;
