@@ -12,7 +12,7 @@
     <header class="page-header">
       <nav class="navigation">
         <div class="left-menu">
-          <ul class="navigation-left">
+          <ul class="navigation-left-catalog">
             <li>
               <a class="navigation-logo" href="/index.html">
                 <img class="logo" src="/images/logo.png" alt="Glacy." width="137" height="55">
@@ -36,26 +36,26 @@
               <!-- END SUB MENU -->
             </li>
             <li>
-              <a class="navigation-link-left" href="#">
+              <a class="navigation-link-left-catalog" href="#">
                 Доставка и оплата
               </a>
             </li>
             <li>
-              <a class="navigation-link-left" href="#">
+              <a class="navigation-link-left-catalog" href="#">
                 О компании
               </a>
             </li>
           </ul>
         </div>
         <div class="right-menu">
-          <ul class="navigation-right">
+          <ul class="navigation-right-catalog">
             <li>
               <a class="contact-phone" href="tel:+78005558628">
                 +7 800 555-86-28
               </a>
             </li>
             <li>
-              <a class="navigation-link-right" href="#">
+              <a class="navigation-link-right-search" href="#">
                 <svg class="search-icon" width="14" height="14" viewBox="0 0 14 14" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd"
@@ -190,6 +190,65 @@
             </div>
             <h2 class="bread-title">Сливочное мороженое</h2>
           </div>
+        </section>
+        <section class="filter">
+          <form class="fat-info" action="https://echo.htmlacademy.ru" method="post">
+            <div class="select-wrap">
+              <label for="sort_by_select" class="filter_label">
+                Сортировка:
+              </label>
+              <select class="sort_by_select" id="sort_by_select" name="sort">
+                <option>по популярности</option>
+                <option>сначала недорогие</option>
+                <option>сначала дорогие</option>
+              </select>
+            </div>
+            <div class="select-wrap">
+              <span class="range-title">
+                Цена: 100 ₽ – 500 ₽
+              </span>
+              <div class="range-wrap">
+                <div class="range-bar">
+                </div>
+              </div>
+            </div>
+            <fieldset class="fat-wrap">
+              <legend class="fat-title">Жирность:</legend>
+              <div class="fat-wrapper">
+                <input type="radio" id="0" name="number" value="zero">
+                <label for="0">0%</label><br>
+
+                <input type="radio" id="10" name="number" value="ten" checked>
+                <label for="10">до 10% </label><br>
+
+                <input type="radio" id="30" name="number" value="thirtylow" />
+                <label for="30">до 30%</label>
+
+                <input type="radio" id="30+" name="number" value="thirtyhigh" />
+                <label for="30+">выше 30%</label>
+              </div>
+            </fieldset>
+            <fieldset class="inside-wrap">
+              <legend class="fat-title">Наполнители:</legend>
+              <div class="inside-wrapper">
+                <input type="radio" id="0" name="number" value="zero" checked>
+                <label for="0">шоколадные</label><br>
+
+                <input type="radio" id="10" name="number" value="ten" checked>
+                <label for="10">сахарные посыпки</label><br>
+
+                <input type="radio" id="30" name="number" value="thirtylow" />
+                <label for="30">фрукты</label>
+
+                <input type="radio" id="30+" name="number" value="thirtyhigh" />
+                <label for="30+">сиропы</label>
+
+                <input type="radio" id="30+" name="number" value="thirtyhigh" />
+                <label for="30+">джемы</label>
+              </div>
+            </fieldset>
+            <button class="sort-button">Применить</button>
+          </form>
         </section>
         <section class="products">
           <div class="product-wrapper">
@@ -426,13 +485,15 @@
                     </button>
                   </li>
                   <li class="slider-pagination-item">
-                    <button class="slider-pagination-button-bottom" type="button">&gt;
+                    <button class="slider-pagination-button-bottom-right" type="button">&gt;
                       <span class="visually-hidden">5 страница.</span>
                     </button>
                   </li>
               </div>
             </ul>
           </div>
+
+
         </section>
       </div>
     </main>
