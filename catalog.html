@@ -41,7 +41,7 @@
               </a>
             </li>
             <li>
-              <a class="navigation-link-left" href="#">
+              <a class="navigation-link-left-left" href="#">
                 О компании
               </a>
             </li>
@@ -186,7 +186,7 @@
                   d="M1.35355.146447c-.19526-.1952625-.511841-.1952625-.707103 0-.195263.195262-.195263.511844 0 .707106L2.79289 3 .646447 5.14645c-.195263.19526-.195263.51184 0 .7071.195262.19527.511843.19527.707103 0l2.5-2.5c.19527-.19526.19527-.51184 0-.7071l-2.5-2.500003Zm3.49997 0c-.19526-.1952625-.51184-.1952625-.7071 0-.19527.195262-.19527.511844 0 .707106L6.29286 3 4.14642 5.14645c-.19527.19526-.19527.51184 0 .7071.19526.19527.51184.19527.7071 0l2.5-2.5c.19526-.19526.19526-.51184 0-.7071l-2.5-2.500003Z"
                   fill="#2D3440" />
               </svg>
-              <a class="bread-link-active" href="#">Каталог</a>
+              <a class="bread-link-active">Каталог</a>
             </div>
             <h2 class="bread-title">Сливочное мороженое</h2>
           </div>
@@ -198,10 +198,16 @@
                 Сортировка:
               </label>
               <select class="sort_by_select" id="sort_by_select" name="sort">
-                <option>по популярности</option>
-                <option>сначала недорогие</option>
-                <option>сначала дорогие</option>
+                <option value="popular">по популярности</option>
+                <option value="cheapest">по дешевле</option>
+                <option value="expensive">по дороже</option>
               </select>
+              <svg class="arrow-select" width="12" height="6" viewBox="0 0 12 6" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M1.80812.195262c-.26035-.2603494-.68246-.2603494-.942814 0-.260349.26035-.260349.68246 0 .942808L5.52565 5.79842c.00206.00211.00414.00422.00624.00632.1307.13069.30215.19578.47345.19526.16996-.0005.33977-.06559.46944-.19526.00209-.00209.00416-.00418.00621-.00629l4.66041-4.66038c.2603-.260348.2603-.682458 0-.942808-.2604-.2603494-.6825-.2603494-.9428 0L6.00334 4.39048 1.80812.195262Z"
+                  fill="#2D3440" />
+              </svg>
             </div>
             <div class="select-wrap">
               <span class="range-title">
@@ -210,10 +216,10 @@
               <div class="range">
                 <div class="range-scale">
                   <div class="range-bar" style="left: 34px; width: 75px">
-                    <button class="range-toggle toggle-min">
+                    <button type="button" class="range-toggle toggle-min">
                       <span class="visually-hidden">Изменить минимальную цену.</span>
                     </button>
-                    <button class="range-toggle toggle-max">
+                    <button type="button" class="range-toggle toggle-max">
                       <span class="visually-hidden">Изменить максимальную цену.</span>
                     </button>
                   </div>
@@ -242,7 +248,7 @@
               </div>
             </fieldset>
             <fieldset class="inside-wrap">
-              <legend class="fat-title">Наполнители:</legend>
+              <legend class="inside-title">Наполнители:</legend>
               <div class="inside-wrapper">
                 <input type="checkbox" id="chocolate" name="food" value="chocolate" class="checkbox-custom" checked>
                 <label for="chocolate" class="checkbox-custom-label">шоколадные</label><br>
@@ -492,39 +498,39 @@
                 <button class="show-more-button">Показать еще</button>
                 <ol class="slider-pagination-bottom">
                   <li class="slider-pagination-item-bottom">
-                    <button class="slider-pagination-button-bottom-left" type="button">&lt;
+                    <button class="slider-pagination-button-bottom-left">&lt;
                       <span class="visually-hidden">1 страница.</span>
                     </button>
                   </li>
                   <li class="slider-pagination-item-bottom">
-                    <button class="slider-pagination-button-bottom" type="button">1
+                    <a class="slider-pagination-button-bottom">1
                       <span class="visually-hidden">1 страница.</span>
-                    </button>
+                    </a>
                   </li>
                   <li class="slider-pagination-item">
-                    <button class="slider-pagination-button-bottom" type="button">2
+                    <a class="slider-pagination-button-bottom">2
                       <span class="visually-hidden">2 страница.</span>
-                    </button>
+                    </a>
                   </li>
                   <li class="slider-pagination-item">
-                    <button class="slider-pagination-button-bottom-active" type="button">3
+                    <a class="slider-pagination-button-bottom-active">3
                       <span class="visually-hidden">3 страница.</span>
-                    </button>
+                    </a>
                   </li>
                   <li class="slider-pagination-item">
-                    <button class="slider-pagination-button-bottom" type="button">4
+                    <a class="slider-pagination-button-bottom">4
                       <span class="visually-hidden">4 страница.</span>
-                    </button>
+                    </a>
                   </li>
                   <li class="slider-pagination-item">
-                    <button class="slider-pagination-button-bottom" type="button">5
+                    <a class="slider-pagination-button-bottom">5
                       <span class="visually-hidden">5 страница.</span>
-                    </button>
+                    </a>
                   </li>
                   <li class="slider-pagination-item">
-                    <button class="slider-pagination-button-bottom-right" type="button">&gt;
+                    <a class="slider-pagination-button-bottom-right">&gt;
                       <span class="visually-hidden">5 страница.</span>
-                    </button>
+                    </a>
                   </li>
               </div>
             </ul>
