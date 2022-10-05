@@ -2,7 +2,7 @@
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/inter-400.woff2") format("woff2");
+  src: url("/fonts/inter-400.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -10,7 +10,7 @@
   font-family: "Inter";
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/inter-700.woff2") format("woff2");
+  src: url("/fonts/inter-700.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -18,7 +18,7 @@
   font-family: "Inter";
   font-style: normal;
   font-weight: 900;
-  src: url("../fonts/inter-900.woff2") format("woff2");
+  src: url("/fonts/inter-900.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -404,7 +404,6 @@ html {
   position: relative;
   flex-direction: row;
   flex-wrap: nowrap;
-
 }
 
 .navigation-logo:hover {
@@ -423,7 +422,7 @@ html {
 .navigation-left {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   list-style: none;
   padding: 0;
   gap: 9px;
@@ -434,9 +433,11 @@ html {
 .navigation-right {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   list-style: none;
   padding: 0;
   margin-left: 176px;
+
 }
 
 .navigation-link-left {
@@ -601,6 +602,7 @@ html {
   background: rgba(252, 252, 252, 0.3);
   border-radius: 30px;
   margin-right: 10px;
+
 }
 
 .navigation-link-right-search {
@@ -2145,7 +2147,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
   flex-direction: row;
   margin: 0 auto;
   width: 1170px;
-  background-image: url(..//images/callus.png);
+  background-image: url(..//images/call-us.png);
   background-repeat: no-repeat;
   background-color: #FFFFFF;
   border-radius: 16px;
@@ -2405,19 +2407,19 @@ input[type=date]::-webkit-calendar-picker-indicator {
   padding-left: 64px;
 }
 
-.user-forma {
+.user-free-form {
   height: 149px;
 }
 
 .user-email:hover,
 .user-name:hover,
-.user-forma:hover {
+.user-free-form:hover {
   background: #DCDCDC;
 }
 
 .user-email:focus-visible,
 .user-name:focus-visible,
-.user-forma:focus-visible {
+.free-form:focus-visible {
   outline: 2px solid #AF4FFF;
   background: #F0F0F0;
 }
@@ -2501,7 +2503,27 @@ input.user-email:disabled {
   margin-left: 286px;
   margin-top: 32px;
 }
+.button-modal:hover {
+  background: rgba(252, 252, 252, 0.3);
+  outline: 4px solid #FF2F64;
+  border-radius: 26px;
+  color: #2D3440;
+}
 
+.button-modal:focus-visible {
+  background: #FF2F64;
+  outline: 2px solid #2D3440;
+  box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
+  border-radius: 26px;
+
+}
+
+.button-modal:active {
+  background: #FEAFC3;
+  outline: 2px solid #2D3440;
+  box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
+  border-radius: 26px;
+}
 /* modal window end */
 
 /* catalog.html */
@@ -3001,6 +3023,7 @@ input.user-email:disabled {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
+  margin-bottom: 63px;
 }
 
 .slider-pagination-bottom {
@@ -3008,8 +3031,8 @@ input.user-email:disabled {
   flex-direction: row;
   flex-wrap: nowrap;
   list-style: none;
-  margin-left: 770px;
-  gap: 2px;
+  margin-left: 780px;
+  gap: 3px;
   margin-bottom: 77px;
 }
 
@@ -3094,6 +3117,7 @@ input.user-email:disabled {
   margin: 0;
   padding: 0;
   border-style: none;
+  margin-top: 26px;
 }
 
 .show-more-button:hover {
