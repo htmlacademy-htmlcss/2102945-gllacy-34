@@ -2,7 +2,7 @@
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/inter-400.woff2") format("woff2");
+  src: url("/fonts/inter-400.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -10,7 +10,7 @@
   font-family: "Inter";
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/inter-700.woff2") format("woff2");
+  src: url("/fonts/inter-700.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -18,7 +18,7 @@
   font-family: "Inter";
   font-style: normal;
   font-weight: 900;
-  src: url("../fonts/inter-900.woff2") format("woff2");
+  src: url("/fonts/inter-900.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -891,7 +891,7 @@ dd {
 }
 
 .popover-cart {
-  display: block;
+  display: none;
 }
 
 .popover-content {
@@ -3023,6 +3023,7 @@ input.user-email:disabled {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
+  margin-bottom: 63px;
 }
 
 .slider-pagination-bottom {
@@ -3030,8 +3031,8 @@ input.user-email:disabled {
   flex-direction: row;
   flex-wrap: nowrap;
   list-style: none;
-  margin-left: 770px;
-  gap: 2px;
+  margin-left: 780px;
+  gap: 3px;
   margin-bottom: 77px;
 }
 
@@ -3116,6 +3117,7 @@ input.user-email:disabled {
   margin: 0;
   padding: 0;
   border-style: none;
+  margin-top: 26px;
 }
 
 .show-more-button:hover {
